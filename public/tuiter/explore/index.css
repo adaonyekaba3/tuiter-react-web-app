@@ -127,3 +127,8 @@ a {
     left: 5px;
     bottom: 0px;
 }
+.wd-stacked-icon {
+    width: 1em;
+    height: 1em;
+    line-height: 1em;
+}
