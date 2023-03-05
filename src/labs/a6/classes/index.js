@@ -1,7 +1,6 @@
 import './index.css';
 
 function Classes() {
-    const color = 'blue';
     const dangerous = true;
     return (
         <div>
@@ -11,5 +10,5 @@ function Classes() {
                 Dangerous background</div>
         </div>
     )
-};
+}
 export default Classes;

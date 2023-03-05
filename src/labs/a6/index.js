@@ -2,7 +2,6 @@ import Classes from "./classes";
 import Styles from "./styles";
 import ConditionalOutput
     from "./conditional-output";
-import TodoItem from "./todo/todos.json";
 import TodoList from "./todo/todo-list";
 
 function Assignment6() {
