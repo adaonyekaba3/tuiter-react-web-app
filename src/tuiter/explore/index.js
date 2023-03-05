@@ -19,7 +19,7 @@ const ExploreComponent = () => {
             </div>
             <ul className="nav nav-pills mb-2">
                 <li className="nav-item">
-                    <a className="nav-link active" onClick={foo}>For You</a>
+                    <a className="nav-link active">For You</a>
                 </li>
                 <li className="nav-item">
                     <a className="nav-link">Trending</a>
