@@ -1,18 +1,17 @@
 import React from "react";
-import postsArray from './posts.json';
-import PostSummaryItem
-    from "./post-summary-item";
-import who from "../../../src/tuiter/who-to-follow-list/who";
+import { useSelector } from "react-redux";
+import PostSummaryItem from "./post-summary-item";
 
 const PostSummaryList = () => {
-    return(
-        <ul className="list-group">
-            {
-                postsArray.map(post =>
-                                   <PostSummaryItem
-                                       key={who._id} post={post}/> )
-            }
-        </ul>
+    const postsArray = useSelector(
+        (state) => state.tuits
     );
-};
+
+    return (
+        <div className="mt-2 bg-light list-group">
+            {postsArray.map(post => <PostSummaryItem key={post.id} post={post} />)}
+        </div>
+    );
+}
+
 export default PostSummaryList;
