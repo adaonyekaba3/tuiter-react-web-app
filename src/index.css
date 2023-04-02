@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.wd-avatar-48px {
+  position: relative;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  overflow: hidden;
+}
