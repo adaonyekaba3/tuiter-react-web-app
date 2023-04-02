@@ -2,25 +2,9 @@ import React from "react";
 import {useDispatch} from "react-redux";
 import {updateTuitThunk} from "../../services/tuits-thunks";
 
-const TuitStats = (
-    {
-        post = {
-            "topic": "Space",
-            "userName": "SpaceX",
-            "time": "2h",
-            "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
-            "image": "tesla.png",
-            "liked": true,
-            "replies": 123,
-            "retuits": 432,
-            "likes": 2345,
-            "dislikes": 2345,
-            "handle": "@defaultHandle",
-            "tuit": "Default tuit"
-        }
-    }
-) => {
+const TuitStats = ( tuit = {}) => {
     const dispatch = useDispatch();
+    tuit = tuit.tuit;
     return (
         <div className="d-flex justify-content-between pt-2">
             <a href="#" className="wd-text-decoration-none text-secondary">
