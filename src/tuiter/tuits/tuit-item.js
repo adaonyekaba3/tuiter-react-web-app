@@ -1,14 +1,9 @@
 import React from "react";
 import TuitStats from "./tuit-stats";
 import { useDispatch } from "react-redux";
-// import { deleteTuit } from "../reducers/tuits-reducer";
 import {deleteTuitThunk} from "../../services/tuits-thunks";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faCheckCircle} from "@fortawesome/free-solid-svg-icons";
-import {faComment} from "@fortawesome/free-regular-svg-icons";
-import {faRetweet} from "@fortawesome/free-solid-svg-icons";
-import {faHeart} from "@fortawesome/free-regular-svg-icons";
-import {faUpload} from "@fortawesome/free-solid-svg-icons";
 
 const TuitItem = ({
                       tuit = {
@@ -49,9 +44,7 @@ const TuitItem = ({
 {tuit.handle} - {tuit.time}
 </span>
                     </p>
-                    {/*<p className="m-0 text-white">*/}
                     {tuit.tuit}
-                    {/*</p>*/}
                     <TuitStats tuit={tuit} />
                 </div>
             </div>
